@@ -9,13 +9,13 @@ public class Main4 {
             c = a / b;
             System.out.println(c);
 
+        } catch (ArithmeticException ex) {
+            System.out.println("Arithmetic Exception: You can't divide by 0");
         } catch (Exception ex) {
             System.out.println("Exception");
 
-        } 
-//        catch (ArithmeticException ex) {
-//            System.out.println("Arithmetic Exception: You can't divide by 0");
-//        }
+        }
+
 
     }
 

@@ -7,6 +7,15 @@ public class Main3 {
     }
 
     static void showLength(String s) {
-        System.out.println(s.length());
+        try {
+            System.out.println(s.length());
+        } catch (NullPointerException e) {
+            System.out.println("Podaj istniejący obiekt lub parametr" +
+                    " różny od null");
+            System.out.println(e.getMessage());
+            System.out.println(e);
+            e.printStackTrace();
+        }
+
     }
 }

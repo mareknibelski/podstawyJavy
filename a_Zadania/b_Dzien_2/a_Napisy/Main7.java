@@ -4,10 +4,15 @@ public class Main7 {
 
     public static void main(String[] args) {
 
+        System.out.println(containsStr("CodersLab", "Lab"));
 
     }
 
     static boolean containsStr(String str, String search){
-        return false;
+        if (str.contains(search)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

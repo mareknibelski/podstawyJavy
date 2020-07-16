@@ -4,10 +4,12 @@ public class Main5 {
 
     public static void main(String[] args) {
 
+        System.out.println(charPos("Nibelski", 'i'));
 
     }
 
     static int charPos(String str, char c) {
-        return 1;
+        int index = str.indexOf(c);
+        return index;
     }
 }
